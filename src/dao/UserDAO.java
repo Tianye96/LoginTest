@@ -81,7 +81,7 @@ public class UserDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JDBCUtils.close(sta, con);
+            JDBCUtils.close(res, sta, con);
         }
         return true;
     }
